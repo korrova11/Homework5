@@ -44,12 +44,14 @@ public class Main {
     public static void task3() {
         System.out.println("Задача 3");
         int year;
-        year = 2100;
+        year = 2021;
         // остаток от деления номера года на 4
               int remDiv = year % 4;
         // остаток от деления на 400
-              int fourHundrYear = year % 400;
-        boolean leapYear = (remDiv == 0 && fourHundrYear == 0);
+                      int fourHundrYear = year % 400;
+         // остаток от деления на 100
+              int hundredYear = year%100;
+        boolean leapYear = (((remDiv==0) && (hundredYear !=0)) || (fourHundrYear==0));
         if (leapYear) {
             System.out.println(year + " год является високосным.");
         } else {
