@@ -5,10 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
-        //  task6();
-        //   task7();
-        //   task8();
-    }
+                  }
 
     public static void task1() {
         System.out.println("Задача 1");
@@ -47,13 +44,11 @@ public class Main {
     public static void task3() {
         System.out.println("Задача 3");
         int year;
-        year = 2021;
+        year = 2100;
         // остаток от деления номера года на 4
-        int four = 4;
-        int remDiv = year % four;
+              int remDiv = year % 4;
         // остаток от деления на 400
-        int d = 400;
-        int fourHundrYear = year % d;
+              int fourHundrYear = year % 400;
         boolean leapYear = (remDiv == 0 && fourHundrYear == 0);
         if (leapYear) {
             System.out.println(year + " год является високосным.");
